@@ -3,6 +3,7 @@
     public enum EventBusType
     {
         StandardEvent,
-        AnotherEvent
+        AnotherEvent,
+        MessageEvent
     }
 }
