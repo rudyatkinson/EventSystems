@@ -1,4 +1,4 @@
-﻿namespace EventSystems.EventQueue
+﻿namespace BilalAydin.EventSystems.EventQueue
 {
     public class MessageData
     {

@@ -1,9 +1,10 @@
 using System.Collections.Generic;
+using BilalAydin.EventSystems.EventBus;
 using UnityEngine;
-using EventBusType = EventSystems.EventBus.EventBusType;
-using EventArgs = EventSystems.EventBus.EventArgs;
+using EventBusType = BilalAydin.EventSystems.EventBus.EventBusType;
+using EventArgs = BilalAydin.EventSystems.EventBus.EventArgs;
 
-namespace EventSystems.EventQueue
+namespace BilalAydin.EventSystems.EventQueue
 {
     public class MessageBox : MonoBehaviour
     {
@@ -28,7 +29,7 @@ namespace EventSystems.EventQueue
             EventBus.EventBus.Unsubscribe(EventBusType.MessageEvent, OnMessageReceived);
         }
 
-        private void OnMessageReceived(EventArgs e)
+        private void OnMessageReceived(EventBus.EventArgs e)
         {
             MessageData data = (MessageData) e.Data;
             _messageEvent.Enqueue(data);

@@ -1,26 +1,29 @@
 ﻿using System;
-using EventSystems.EventBus;
+using BilalAydin.EventSystems.EventBus;
 using UnityEngine;
 
-public class EventQueueTest : MonoBehaviour
+namespace BilalAydin
 {
-    private bool _sendMessage => Input.GetKeyDown(KeyCode.Space);
-
-    private int _sentMessageCount = 0;
-        
-    private void Update()
+    public class EventQueueTest : MonoBehaviour
     {
-        if (_sendMessage)
+        private bool _sendMessage => Input.GetKeyDown(KeyCode.Space);
+
+        private int _sentMessageCount = 0;
+        
+        private void Update()
         {
-            _sentMessageCount++;
-            EventBus.Invoke(EventBusType.MessageEvent, new EventSystems.EventBus.EventArgs()
+            if (_sendMessage)
             {
-                Data = new EventSystems.EventQueue.MessageData()
+                _sentMessageCount++;
+                EventBus.Invoke(EventBusType.MessageEvent, new BilalAydin.EventSystems.EventBus.EventArgs()
                 {
-                    Title = $"Header ID: {_sentMessageCount}",
-                    Message = $"This message includes details."
-                }
-            });
+                    Data = new BilalAydin.EventSystems.EventQueue.MessageData()
+                    {
+                        Title = $"Header ID: {_sentMessageCount}",
+                        Message = $"This message includes details."
+                    }
+                });
+            }
         }
     }
 }

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace RudyAtkinson.Observer {
+namespace BilalAydin.Observer {
     public class AchievementManager : MonoBehaviour
     {
         [SerializeField] private List<string> completedAchievements = new List<string>();

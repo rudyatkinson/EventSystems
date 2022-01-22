@@ -1,4 +1,4 @@
-﻿namespace EventSystems.EventBus
+﻿namespace BilalAydin.EventSystems.EventBus
 {
     public class AnotherEventData
     {

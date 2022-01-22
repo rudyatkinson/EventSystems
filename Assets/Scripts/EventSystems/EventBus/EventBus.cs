@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine.Events;
 
-namespace EventSystems.EventBus
+namespace BilalAydin.EventSystems.EventBus
 {
     public static class EventBus
     {

@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace RudyAtkinson.Observer
+namespace BilalAydin.Observer
 {
     public class PressSpaceAchievement: MonoBehaviour
     {
