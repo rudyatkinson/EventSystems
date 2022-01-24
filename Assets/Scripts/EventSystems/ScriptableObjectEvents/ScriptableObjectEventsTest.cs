@@ -1,10 +1,8 @@
-using System;
 using BilalAydin.Character;
 using BilalAydin.ScriptableObject.Events;
 using UnityEngine;
-using Void = BilalAydin.ScriptableObject.Events.Void;
 
-namespace RudyAtkinson {
+namespace BilalAydin.EventSystems.ScriptableObjectEvents {
     public class ScriptableObjectEventsTest : MonoBehaviour
     {
         [SerializeField] private VoidEvent onKeypad1Pressed;

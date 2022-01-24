@@ -19,14 +19,14 @@ namespace BilalAydin.EventSystems.EventQueue
 
         private void OnEnable()
         {
-            EventBus.EventBus.Subscribe(EventBusType.MessageEvent, OnMessageReceived);
+            EventBus.Bus.Subscribe(EventBusType.MessageEvent, OnMessageReceived);
         }
 
         private void OnDisable()
         {
             _messageEvent.Clear();
             
-            EventBus.EventBus.Unsubscribe(EventBusType.MessageEvent, OnMessageReceived);
+            EventBus.Bus.Unsubscribe(EventBusType.MessageEvent, OnMessageReceived);
         }
 
         private void OnMessageReceived(EventBus.EventArgs e)

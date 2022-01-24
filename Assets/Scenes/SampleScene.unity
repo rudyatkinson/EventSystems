@@ -152,7 +152,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &272527214
 SpriteRenderer:
@@ -552,12 +552,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363076207}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72f65c99eb384beab1e85a1f023f84ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 1693f96ae313495ca8a6a6ecd14d8746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  achievementName: AClicker!
+  completedAchievements: []
 --- !u!114 &363076209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,7 +583,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -699,7 +699,7 @@ Transform:
   - {fileID: 548605671}
   - {fileID: 298736954}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &548605670
 GameObject:
@@ -1205,6 +1205,8 @@ GameObject:
   - component: {fileID: 1751263503}
   - component: {fileID: 1751263502}
   - component: {fileID: 1751263505}
+  - component: {fileID: 1751263507}
+  - component: {fileID: 1751263506}
   m_Layer: 0
   m_Name: TestScripts
   m_TagString: Untagged
@@ -1265,6 +1267,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onKeypad1Pressed: {fileID: 11400000, guid: 49fae0960f4bc4c4282e76e95199adf0, type: 2}
   onKeypad2Pressed: {fileID: 11400000, guid: b2e679c9989f2ac41aea4e34ea2ec6fd, type: 2}
+--- !u!114 &1751263506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751263501}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb9f23899814968a22ea767cb22d386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: AClicker!_ClassicalApproach
+--- !u!114 &1751263507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751263501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f65c99eb384beab1e85a1f023f84ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: AClicker!
 --- !u!1 &1852868760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,7 +1354,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1852868764
 MonoBehaviour:
@@ -1408,7 +1436,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1950331435
 GameObject:
@@ -1637,7 +1665,7 @@ RectTransform:
   m_Children:
   - {fileID: 638367615}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 namespace BilalAydin.EventSystems.EventBus
 {
-    public static class EventBus
+    public static class Bus
     {
         private static readonly Dictionary<EventBusType, UnityEvent> Events = new Dictionary<EventBusType, UnityEvent>();
 

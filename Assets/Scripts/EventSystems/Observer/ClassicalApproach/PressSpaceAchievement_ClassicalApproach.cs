@@ -1,22 +1,19 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
-namespace BilalAydin.Observer
+namespace BilalAydin.EventSystems.Observer.ClassicalApproach
 {
-    public class PressSpaceAchievement: MonoBehaviour
+    public class PressSpaceAchievement_ClassicalApproach : Subject
     {
         [SerializeField] private string achievementName;
         
         public bool KeyDown => Input.GetKeyDown(KeyCode.A);
 
-        public static UnityEvent<string> OnKeyDown = new UnityEvent<string>();
-
         private void Update()
         {
             if (KeyDown)
             {
-                OnKeyDown?.Invoke(achievementName);
+                Invoke(achievementName);
                 enabled = false;
             }
         }

@@ -1,8 +1,7 @@
-﻿using System;
-using BilalAydin.EventSystems.EventBus;
+﻿using BilalAydin.EventSystems.EventBus;
 using UnityEngine;
 
-namespace BilalAydin
+namespace BilalAydin.EventSystems.EventQueue
 {
     public class EventQueueTest : MonoBehaviour
     {
@@ -15,9 +14,9 @@ namespace BilalAydin
             if (_sendMessage)
             {
                 _sentMessageCount++;
-                EventBus.Invoke(EventBusType.MessageEvent, new BilalAydin.EventSystems.EventBus.EventArgs()
+                Bus.Invoke(EventBusType.MessageEvent, new EventArgs()
                 {
-                    Data = new BilalAydin.EventSystems.EventQueue.MessageData()
+                    Data = new MessageData()
                     {
                         Title = $"Header ID: {_sentMessageCount}",
                         Message = $"This message includes details."

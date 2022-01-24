@@ -5,9 +5,9 @@ using UnityEngine.Events;
 
 namespace BilalAydin.ScriptableObject.Listeners
 {
-    public class BaseEventListener<T, TE, TEur> : MonoBehaviour, IEventListener<T> 
+    public class BaseEventListener<T, TE, TR> : MonoBehaviour, IEventListener<T> 
         where TE : BaseEvent<T> 
-        where TEur : UnityEvent<T>
+        where TR : UnityEvent<T>
     {
         [SerializeField] private TE @event;
         public TE Event
@@ -16,7 +16,7 @@ namespace BilalAydin.ScriptableObject.Listeners
             set => @event = value;
         }
 
-        [SerializeField] private TEur response;
+        [SerializeField] private TR response;
 
         private void OnEnable()
         {
